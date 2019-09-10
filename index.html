@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stock App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>What's the Weather?</h1>
+  </header>
+  <section id="weather-search">
+    <form id="weather-form">
+      <input 
+        type="text" 
+        name="zipCode" 
+        value="" 
+        placeholder="zipCode" 
+        id="zipCode"
+      >
+      <input 
+        type="submit" 
+        value="Get Weather" 
+        id="getTemp">
+    </form>
+  </section>
+  <main>
+    <h2 class="city"></h2>
+    <h3 class="current-temp"></h3>
+    <h3 class="min-temp"></h3>
+    <h3 class="max-temp"></h3>
+    <p class="description"></p>
+  </main>
+  <script src="https://unpkg.com/axios/dist/axios.min"></script>
+  <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>

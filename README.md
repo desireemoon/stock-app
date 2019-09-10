@@ -110,64 +110,17 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Design and Pseudocode | H | 3hrs| :---: | :---: |
-| Structure | H | 4hrs| :---: | :---: |
-| Logic | H | 5hrs| :---: | :---: |
-| Design | M | 3hrs| :---: | :---: |
-| Total | H | 15hrs| :---: | :---: |
+| Project Design | H | 3hrs| :---: | :---: |
+| Pseudocode | H | 3hrs| :---: | :---: |
+| HTML structure | H | 4hrs| :---: | :---: |
+| Get API keys and grab data | H | 5hrs| :---: | :---: |
+| impliment api logic | M | 4hrs| :---: | :---: |
+| impliment js functionality | M | 3hrs| :---: | :---: |
+| CSS styling | M | 4hrs| :---: | :---: |
+| Total | H | 25hrs| :---: | :---: |
 
 
 ## Code Snippet
-
-Created weather page logic that worked 
-
-const weatherUrl = "http://api.openweathermap.org/data/2.5/weather?units=imperial&zip=";
-const api_key = '&appid=917bf4e0048026b0f2e48ce18b73c131';
-
-const body = document.body
-const city = document.querySelector(".city")
-const currentTemp = document.querySelector(".current-temp")
-const minTemp = document.querySelector(".min-temp")
-const maxTemp = document.querySelector(".max-temp")
-const description = document.querySelector(".description")
-
-
-getWeather('');
-async function getWeather(zipCode) {
-    console.log(zipCode)
-   try {
-       let response = await axios.get(
-           `${weatherUrl}${zipCode}${api_key}`
-       );
-       console.log(response.data)
-       let weatherInfo = response.data
-       city.innerHTML = `${weatherInfo.name}, ${zipCode}`
-       currentTemp.innerHTML = `Current Temperature: ${weatherInfo.main.temp}`
-       minTemp.innerHTML = `Min Temperature: ${weatherInfo.main.temp_min}`
-       maxTemp.innerHTML = `Max Temperature: ${weatherInfo.main.temp_max}`
-       description.innerHTML = `Weather Description: ${weatherInfo.weather[0].description}`
-        console.log(weatherInfo.main.temp)
-       if (weatherInfo.main.temp > 90) {
-           currentTemp.classList.add("hot")
-           currentTemp.classList.remove("cold")
-       } else if (weatherInfo.main.temp < 40) {
-        currentTemp.classList.add("cold")
-        currentTemp.classList.remove("hot")
-       } else {
-        currentTemp.classList.remove("cold")
-        currentTemp.classList.remove("hot")
-       }
-   } catch (error) {
-    //console.log(error);
-   }
-}
-
-let searchBar = document.getElementById("weather-form");
-searchBar.addEventListener('submit', function(event) {
-    event.preventDefault();
-    var text = document.getElementById("zipCode").value;
-    getWeather(text);
-})
 
 
 ## Change Log

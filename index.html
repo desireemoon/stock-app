@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Stock App</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Stock App</title>
+    <link rel="stylesheet" type="text/css" href="reset.css"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <header>
-    <h1>What's the Weather?</h1>
+    <h1>Simple Stocks</h1>
+    <h2>Stocks Made Easy</h2>
   </header>
-  <section id="weather-search">
-    <form id="weather-form">
-      <input 
-        type="text" 
-        name="zipCode" 
-        value="" 
-        placeholder="zipCode" 
-        id="zipCode"
-      >
-      <input 
-        type="submit" 
-        value="Get Weather" 
-        id="getTemp">
-    </form>
-  </section>
-  <main>
-    <h2 class="city"></h2>
-    <h3 class="current-temp"></h3>
-    <h3 class="min-temp"></h3>
-    <h3 class="max-temp"></h3>
-    <p class="description"></p>
-  </main>
-  <script src="https://unpkg.com/axios/dist/axios.min"></script>
-  <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+  <section id="company-search">
+        <form id="company-form">
+            <label for="company symbol">Input the company symbol:</label>
+            <input 
+                type="text" 
+                name="company symbol" 
+                value="" 
+                placeholder="company symbol" 
+                id="company-symbol"
+            >
+            <input 
+                type="submit" 
+                value="Get Copmany" 
+                id="get-company"
+            >
+        </form>
+    </section>
+    <section class="find-symbol">
+        <p>Don't know the stock symbol? <a href="https://iextrading.com/trading/eligible-symbols/">Click here</a> for a searchable list!</p>
+    </section>
+    <main>
+        <section class="company-info">
+            <h3 id="name"></h3>
+            <ul>
+                <li></li>
+
+            </ul>
+
+        </section>
+        <section class="stock-info">
+
+        </section>
+        <section class="news">
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min"></script>
+    <script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>

@@ -1,9 +1,8 @@
+/* MAKE A MAX WIDTH FOR EACH SECTION SO THE CSS DOESN'T MESS UP */
+
 body {
     min-width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
 }
 
 header {
@@ -27,5 +26,17 @@ header {
 }
 
 .news{
+    display: flex;
+    min-width: 500px;
+    flex-flow: wrap;
     margin: 20px;
+}
+
+.newPic {
+    max-width: 20px;
+}
+
+.articleBox {
+    /* max-width: 200px; */
+    border: solid red 2px;
 }

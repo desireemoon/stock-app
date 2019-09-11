@@ -93,3 +93,9 @@ async function getNews(companySymbol) {
    }
 }
 
+let searchBar = document.getElementById("recipe-form");
+searchBar.addEventListener('submit', function(event) {
+  event.preventDefault();
+  var text = document.getElementById("recipe-search").value;
+  findRecipes(text);
+})

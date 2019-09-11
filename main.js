@@ -16,7 +16,6 @@ let newsArticles = document.querySelector("#news-articles")
 
 //grab api setup connection
 //grab data connect it to html 
-getCompanyLogo('dis');
 async function getCompanyLogo(companySymbol) {
     console.log(companySymbol)
    try {
@@ -30,7 +29,6 @@ async function getCompanyLogo(companySymbol) {
    }
 }
 
-getCompanyInfo('dis');
 async function getCompanyInfo(companySymbol) {
     console.log(companySymbol)
    try {
@@ -47,7 +45,6 @@ async function getCompanyInfo(companySymbol) {
    }
 }
 
-getStockInfo('dis');
 async function getStockInfo(companySymbol) {
     console.log(companySymbol)
    try {
@@ -64,7 +61,6 @@ async function getStockInfo(companySymbol) {
    }
 }
 
-getNews('dis');
 async function getNews(companySymbol) {
     console.log(companySymbol)
    try {
@@ -93,9 +89,13 @@ async function getNews(companySymbol) {
    }
 }
 
-let searchBar = document.getElementById("recipe-form");
+//make search button
+let searchBar = document.getElementById("company-form");
 searchBar.addEventListener('submit', function(event) {
   event.preventDefault();
-  var text = document.getElementById("recipe-search").value;
-  findRecipes(text);
+  let text = document.getElementById("company-symbol").value;
+  getCompanyLogo(text);
+  getCompanyInfo(text);
+  getStockInfo(text);
+  getNews(text);
 })

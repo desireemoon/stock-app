@@ -4,5 +4,28 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+}
+
+header {
+    margin: 20px;
+}
+
+.company-search {
+    margin: 20px;
+}
+
+.find-symbol {
+    margin: 20px;
+}
+
+.company-info {
+    margin: 20px;
+}
+
+.stock-info {
+    margin: 20px;
+}
+
+.news{
+    margin: 20px;
 }

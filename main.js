@@ -44,7 +44,8 @@ async function getCompanyInfo(companySymbol) {
        console.log(error.message);
    }
 }
-
+//ADD TIMEOUT TO MAKE LIVE UPDATES
+//FIGURE OUT 52 WEEK ISSUE
 async function getStockInfo(companySymbol) {
     console.log(companySymbol)
    try {
@@ -56,6 +57,9 @@ async function getStockInfo(companySymbol) {
        stockToday.innerHTML = `Today's stock price: ${stockInfo.quote.latestPrice}`
        maxStock.innerHTML = `52 Week High: ${stockInfo.quote.week52High}`
        minStock.innerHTML = `52 Week Low: ${stockInfo.quote.week52Low}`
+       console.log(stockInfo.quote)
+       console.log(stockInfo.quote.week52High)
+       console.log(stockInfo.quote.week52High)
    } catch (error) {
        console.log(error.message);
    }

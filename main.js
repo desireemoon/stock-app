@@ -12,8 +12,9 @@ let stockToday = document.querySelector("#stock-today")
 let maxStock = document.querySelector("#max-stock")
 let minStock = document.querySelector("#min-stock")
 
-let newsArticles = document.querySelector("#news-articles")
+let newsArticles = document.querySelector(".news")
 
+console.log(window.innerWidth)
 //grab api setup connection
 //grab data connect it to html 
 async function getCompanyLogo(companySymbol) {
@@ -73,20 +74,19 @@ async function getNews(companySymbol) {
        );
        console.log(response.data)
        let articles = response.data
-        let articleSection = document.createElement('div')
-        newsArticles.append(articleSection)
        articles.forEach(article => {
         let individualArticle = document.createElement('div')
         individualArticle.classList.add("articleBox")
         individualArticle.innerHTML = `
-            <li><a href="${article.url}">${article.headline}</a></li>
-            <li>${article.summary}</li>
+            <h3><a href="${article.url}">${article.headline}</a></h3>
+            <p>Article Summary:${article.summary}</p>
         `
         let artIm = document.createElement('img')
         artIm.src = article.image
+        artIm.alt = `article image`
         artIm.classList.add("newPic")
         individualArticle.append(artIm)
-        articleSection.appendChild(individualArticle);
+        newsArticles.appendChild(individualArticle);
        });
     } catch (error) {
        console.log(error.message);

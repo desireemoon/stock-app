@@ -3,15 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+     -->
+     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>Stock App</title>
-    <link rel="stylesheet" type="text/css" href="reset.css"> 
+    <!-- <link rel="stylesheet" type="text/css" href="reset.css">  -->
     <link href="https://fonts.googleapis.com/css?family=Gayathri:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
   <header>
-    <h1>Simple Stocks</h1>
+    <h1>Simple Stocks</h1> 
     <h2>Stocks Made Easy</h2>
   </header>
   <section id="company-search">
@@ -34,29 +36,44 @@
     <section class="find-symbol">
         <p>Don't know the stock symbol? <a href="https://iextrading.com/trading/eligible-symbols/">Click here</a> for a searchable list!</p>
     </section>
+    <nav>
+            <h3 class="nav-title">Quick Links:</h3>
+            <ul>
+                <li><a href=".company-info">Company Info</a></li>
+                <li><a href=".stock-info">Stock Info</a></li>
+                <li><a href=".news">News Articles on Company</a></li>
+            </ul>
+            <p>*Page will populate after a company has been searched</p>
+        </nav>
     <main>
+        <section class="title">
+                <h3>Company Information</h3>
+        </section>
         <section class="company-info">
             <img id="logo" src="" alt="company logo">
-            <h3 id="name"></h3>
+            <h4 id="name"></h4>
             <a href="" id="website">Vist Company Website</a>
             <p id="description"></p>
         </section>
+        <section class="title">
+                <h3>Stock Information</h3>
+        </section>
         <section class="stock-info">
-            <h3>Stock Information</h3>
             <ul>
                 <li id="stock-today"></li>
                 <li id="max-stock"></li>
                 <li id="min-stock"></li>
             </ul>
-            <h3 class="stock-explain">What Do These Numbers Mean?</h3>
+            <h4 class="stock-explain">What Do These Numbers Mean?</h4>
             <p>For more information on 52 week high/low, <a href="https://www.investopedia.com/terms/1/52weekhighlow.asp">click here.</a> </p>
 
         </section>
-        <section class="news">
-            <ul id="news-articles"></ul>
+        <section class="title">
+            <h3 id="news-title">News Articles on Company</h3>
         </section>
     </main>
     <script src="https://unpkg.com/axios/dist/axios.min"></script>
     <script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>
+

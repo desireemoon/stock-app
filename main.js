@@ -79,7 +79,7 @@ async function getNews(companySymbol) {
         individualArticle.classList.add("articleBox")
         individualArticle.innerHTML = `
             <h3><a href="${article.url}">${article.headline}</a></h3>
-            <p>Article Summary:${article.summary}</p>
+            <p class="artSum">Article Summary:${article.summary}</p>
         `
         let artIm = document.createElement('img')
         artIm.src = article.image

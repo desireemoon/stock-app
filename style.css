@@ -10,7 +10,17 @@ body {
     background-repeat: no-repeat;
     color: white;
 }
+
 p{
+    color: rgb(8,12,93);
+}
+
+a {
+    color: white;
+    font-weight: 700;
+}
+
+.quick-links {
     color: rgb(8,12,93);
 }
 
@@ -29,8 +39,15 @@ h1 {
 h2 {
     margin: 10px 0 30px 0;
 }
+
+nav {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
 h3 {
     color: rgb(8,12,93);
+    font-weight: 900;
 }
 
 #get-company {
@@ -43,22 +60,31 @@ h3 {
     justify-content: center;
 }
 
-.company-search {
-    margin: 20px auto;
-    margin: 20px;
+#company-search {
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px 0 20px;
+    font-size: 18px;
 }
 
 .find-symbol {
-    margin: 20px auto;
+    display: flex;
+    justify-content: center;
 }
 
 .company-info {
-    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
     background:rgb(8,12,93)
 }
 
 .stock-info {
-    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
     background:rgb(8,12,93)
 }
 
@@ -66,8 +92,13 @@ h3 {
     color: rgb(8,12,93);
 }
 
+.stock-explain {
+    color: white;
+}
+
 .news{
     display: flex;
+    justify-content: center;
     min-width: 500px;
     flex-flow: wrap;
     margin: 20px;
@@ -85,14 +116,19 @@ h3 {
     max-width: 400px;
     border: solid red 2px;
     background:rgb(8,12,93);
+    color: white;
+}
+
+.artSum {
+    color: white;
 }
 
 #description {
     color: white;
 }
 
-/* @media (max-width: 450px) {
+@media (max-width: 450px) {
    body {
        color: red;
    }
-} */
+}

@@ -68,6 +68,9 @@ async function getStockInfo(companySymbol) {
 
 async function getNews(companySymbol) {
     console.log(companySymbol)
+    while (newsArticles.lastChild) {
+        newsArticles.removeChild(newsArticles.lastChild);
+    };
    try {
        let response = await axios.get(
            `${apiUrl}${companySymbol}/news/last/5${api_key}`

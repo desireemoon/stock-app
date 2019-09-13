@@ -4,7 +4,7 @@ body {
     max-width: 100vw; 
     min-height: 100vh;
     margin: 0;
-    font-family: 'Gayathri', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     background-image:  url("photos/light-stock-background.jpg"); 
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,11 +33,13 @@ header {
 }
 
 h1 {
-    margin: 30px 0 10px 0;
+    margin: 20px 0 0 0;
+    font-size: 60px;
 }
 
 h2 {
-    margin: 10px 0 30px 0;
+    margin: 0 0 20px 0;
+    font-size: 20px;
 }
 
 nav {
@@ -48,6 +50,7 @@ nav {
 h3 {
     color: rgb(8,12,93);
     font-weight: 900;
+    font-size: 25px;
 }
 
 #get-company {
@@ -77,15 +80,21 @@ h3 {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background:rgb(8,12,93)
+    background:rgb(8,12,93);
+    box-shadow: 1px 1px 9px #000000;
+    margin: 10px;
+    padding: 10px;
+
 }
 
 .stock-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    background:rgb(8,12,93)
+    margin: 10px;
+    padding: 10px;
+    background:rgb(8,12,93);
+    box-shadow: 1px 1px 9px #000000;
 }
 
 #company-form {
@@ -101,20 +110,21 @@ h3 {
     justify-content: center;
     min-width: 500px;
     flex-flow: wrap;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 #news-title {
     color:rgb(8,12,93);
 }
 .newPic {
-    max-width: 20px;
+    max-width: 100px;
 }
 
 .articleBox {
     margin: 10px;
+    padding: 10px;
     max-width: 400px;
-    border: solid red 2px;
+    box-shadow: 1px 1px 9px #000000;
     background:rgb(8,12,93);
     color: white;
 }
@@ -128,7 +138,7 @@ h3 {
 }
 
 @media (max-width: 450px) {
-   body {
-       color: red;
+   .news {
+       min-width: 300px;
    }
 }

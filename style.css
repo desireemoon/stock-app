@@ -4,42 +4,53 @@ body {
     max-width: 100vw; 
     min-height: 100vh;
     margin: 0;
-    font-family: 'Titillium Web', sans-serif;
-    background-image:  url("photos/light-stock-background.jpg"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+    background-color: #F3F5FF;
+    color: black;
 }
 
 p{
-    color: rgb(8,12,93);
+    /* color: rgb(8,12,93); */
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 1.3;
 }
 
 a {
-    color: white;
+    color: rgb(8,12,93);
     font-weight: 700;
+    font-size: 18px;
+}
+
+a:hover {
+    background: #9CB3BB;
 }
 
 .quick-links {
     color: rgb(8,12,93);
 }
 
+.quick-links:hover {
+    background: #9CB3BB;
+}
+
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background:rgb(8,12,93);
+    background:#9FCAF7;
     width:100%
 }
 
 h1 {
     margin: 20px 0 0 0;
     font-size: 60px;
+    font-family: 'Lato', sans-serif;
 }
 
 h2 {
     margin: 0 0 20px 0;
     font-size: 20px;
+    font-family: 'Lato', sans-serif;
 }
 
 nav {
@@ -48,14 +59,33 @@ nav {
     flex-direction: column;
 }
 h3 {
-    color: rgb(8,12,93);
+    color: black;
     font-weight: 900;
     font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
 }
 
 #get-company {
     background: rgb(8,12,93);
     color: white;
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    border-radius: 15px;
+}
+
+#get-company:hover {
+    background: #9CB3BB;
+}
+
+#company-symbol {
+    width: 100px;
+    height: 20px;
 }
 
 .title {
@@ -73,6 +103,7 @@ h3 {
 .find-symbol {
     display: flex;
     justify-content: center;
+    margin: 0 20px;
 }
 
 .company-info {
@@ -80,7 +111,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background:rgb(8,12,93);
+    background:#9FCAF7;
     box-shadow: 1px 1px 9px #000000;
     margin: 10px;
     padding: 10px;
@@ -93,16 +124,12 @@ h3 {
     align-items: center;
     margin: 10px;
     padding: 10px;
-    background:rgb(8,12,93);
+    background:#9FCAF7;
     box-shadow: 1px 1px 9px #000000;
 }
 
-#company-form {
-    color: rgb(8,12,93);
-}
-
 .stock-explain {
-    color: white;
+    color: black;
 }
 
 .news{
@@ -114,10 +141,10 @@ h3 {
 }
 
 #news-title {
-    color:rgb(8,12,93);
+    color:black;
 }
 .newPic {
-    max-width: 100px;
+    max-width: 300px;
 }
 
 .articleBox {
@@ -125,16 +152,16 @@ h3 {
     padding: 10px;
     max-width: 400px;
     box-shadow: 1px 1px 9px #000000;
-    background:rgb(8,12,93);
-    color: white;
+    background: #9FCAF7;
+    color: black;
 }
 
 .artSum {
-    color: white;
+    color: black;
 }
 
 #description {
-    color: white;
+    color: black;
 }
 
 @media (max-width: 450px) {

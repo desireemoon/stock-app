@@ -40,7 +40,7 @@ async function getCompanyInfo(companySymbol) {
        let companyInfo = response.data
        name.innerHTML = `${companyInfo.companyName} (${companySymbol})`
        website.href = `${companyInfo.website}`
-       description.innerHTML = `Company Description: ${companyInfo.description}`
+       description.innerHTML = `${companyInfo.description}`
    } catch (error) {
        console.log(error.message);
    }

@@ -18,7 +18,7 @@ p{
 a {
     color: rgb(8,12,93);
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 a:hover {
@@ -27,6 +27,7 @@ a:hover {
 
 .quick-links {
     color: rgb(8,12,93);
+    font-size: 20px;
 }
 
 .quick-links:hover {
@@ -37,8 +38,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background:#9FCAF7;
-    width:100%
+    background:#B0D7FF;
+    width:100%;
 }
 
 h1 {
@@ -54,14 +55,24 @@ h2 {
 }
 
 nav {
-    margin: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
 }
+
+.nav-title {
+    margin: 0;
+}
+
+.nav-par {
+    margin: 0;
+}
+
 h3 {
     color: black;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Lato', sans-serif;
 }
 
@@ -91,6 +102,7 @@ h4 {
 .title {
     display: flex;
     justify-content: center;
+    margin: 0 20px;
 }
 
 #company-search {
@@ -113,23 +125,30 @@ h4 {
     padding: 20px;
     background:#9FCAF7;
     box-shadow: 1px 1px 9px #000000;
-    margin: 10px;
+    margin: 10px 20px;
     padding: 10px;
+    max-width: 1250px;
 
+}
+
+.compDis {
+    align-self: flex-start;
 }
 
 .stock-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    margin: 10px 20px;
     padding: 10px;
     background:#9FCAF7;
     box-shadow: 1px 1px 9px #000000;
+    max-width: 1250px;
 }
 
 .stock-explain {
     color: black;
+    align-self: flex-start;
 }
 
 .news{
@@ -137,7 +156,7 @@ h4 {
     justify-content: center;
     min-width: 500px;
     flex-flow: wrap;
-    /* margin: 20px; */
+    margin: 0 20px 20px 20px;
 }
 
 #news-title {
@@ -162,6 +181,28 @@ h4 {
 
 #description {
     color: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background:#B0D7FF;
+    padding: 20px 20px 40px 20px;
+
+}
+
+.social-title {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    margin: 0 10px;
 }
 
 @media (max-width: 450px) {

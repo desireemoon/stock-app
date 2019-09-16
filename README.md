@@ -11,18 +11,18 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Sep 10th| Project Approval - Start Pseudocode | Incomplete
-|Sep 11th| Finish pseudocode - start actual structure code  | Incomplete
-|Sep 12th| Finish structure code - Start logic | Incomplete
-|Sep 13th| Finish logic - Make pretty | Incomplete
-|Sep 14th| Finishing style touches - No major changes  | Incomplete
-|Sep 15th| Emergency last day to finish | Incomplete
-|Sep 16th| Presentation Day! | Incomplete
+|Sep 10th| Project Approval - Start Pseudocode | Complete
+|Sep 11th| Finish pseudocode - start actual structure code  | Complete
+|Sep 12th| Finish structure code - Start logic | Complete
+|Sep 13th| Finish logic - Make pretty | Complete
+|Sep 14th| Finishing style touches - No major changes  | Complete
+|Sep 15th| Emergency last day to finish | Complete
+|Sep 16th| Presentation Day! | Complete
 
 
 ## Project Description
 
-Web app where users who are new to investing can search for companies and recieve easily digestable information on said company to help them decide if they should invest or not.
+Web app where users who are new to investing can search for companies and receive easily digestible information on said company to help them decide if they should invest or not.
 
 ## Wireframes
 
@@ -92,7 +92,7 @@ MVP:
 - Search gives back company info, simple stock info, and news
 
 PostMVP:
--Impliment Social Media for added insight 
+-Implement Social Media for added insight 
 
 #### MVP 
 
@@ -106,22 +106,22 @@ PostMVP:
 -compare companies
 
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
+Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evaluate game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Project Design | H | 3hrs| :---: | :---: |
-| Pseudocode | H | 3hrs| :---: | :---: |
-| HTML structure | H | 4hrs| :---: | :---: |
-| Get API keys and grab data | H | 5hrs| :---: | :---: |
-| impliment api logic | M | 4hrs| :---: | :---: |
-| impliment js functionality | M | 3hrs| :---: | :---: |
-| CSS styling | M | 4hrs| :---: | :---: |
-| Total | H | 25hrs| :---: | :---: |
+| Project Design | H | 3hrs| 3hrs | 3hrs |
+| Pseudocode | H | 3hrs| 2hrs | 2hrs |
+| HTML structure | H | 4hrs| 4hrs | 4hrs |
+| Get API keys and grab data | H | 5hrs| 3hrs | 3hrs |
+| implement api logic | M | 4hrs| 3hrs | 3hrs |
+| implement javascript functionality | M | 3hrs| 3.5hrs | 3.5hrs |
+| CSS styling | M | 4hrs| 7hrs | 7hrs |
+| Total | H | 25hrs| 25.5 | 25.5 |
 
 
 ## Code Snippet
 
 
 ## Change Log
- No changes (yet).
+ Please see commits for all changes made.

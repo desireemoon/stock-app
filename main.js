@@ -43,6 +43,7 @@ async function getCompanyInfo(companySymbol) {
        description.innerHTML = `${companyInfo.description}`
    } catch (error) {
        console.log(error.message);
+       alert(`Please enter a valid stock symbol.`);
    }
 }
 //ADD TIMEOUT TO MAKE LIVE UPDATES

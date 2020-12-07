@@ -139,6 +139,7 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     margin: 10px 20px;
     padding: 10px;
     background:#9FCAF7;

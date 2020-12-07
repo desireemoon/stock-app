@@ -1,6 +1,10 @@
 # stock-app
 Stock app
 
+# Project Link
+
+https://pages.git.generalassemb.ly/desireemoon/stock-app/
+
 # Project Overview
 
 ## Project Schedule
